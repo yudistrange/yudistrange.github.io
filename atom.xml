@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>notes</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yudistrange.github.io/"/>
+  <updated>2020-07-21T07:28:14.572Z</updated>
+  <id>http://yudistrange.github.io/</id>
+  
+  <author>
+    <name>udit</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>reading list</title>
+    <link href="http://yudistrange.github.io/2020/07/21/reading-list/"/>
+    <id>http://yudistrange.github.io/2020/07/21/reading-list/</id>
+    <published>2020-07-20T18:30:00.000Z</published>
+    <updated>2020-07-21T07:28:14.572Z</updated>
+    
+    <content type="html"><![CDATA[<p>I have been sitting on a pile of technical books that I would like to read. But I haven’t been able to do it with conviction. I keep getting distracted by something or the other.</p><p>So I thought maybe I will put the list in the public domain, just to put some pressure on myself. The goal is to finish these cover to cover before the year ends. Here goes it:</p><ul><li>Practical Object Oriented design in Ruby</li><li>TDD by example</li><li>User stories applied</li><li>Software Architecture</li><li>Designing for Scalability with Erlang</li><li>Reactive Design Patterns</li><li>Database Internals</li><li>Designing Data-Intensive Applications</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;I have been sitting on a pile of technical books that I would like to read. But I haven’t been able to do it with conviction. I keep gett
+      
+    
+    </summary>
+    
+    
+    
+      <category term="personal" scheme="http://yudistrange.github.io/tags/personal/"/>
+    
+      <category term="tech" scheme="http://yudistrange.github.io/tags/tech/"/>
+    
+      <category term="books" scheme="http://yudistrange.github.io/tags/books/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>hello world</title>
+    <link href="http://yudistrange.github.io/2020/01/25/hello-world/"/>
+    <id>http://yudistrange.github.io/2020/01/25/hello-world/</id>
+    <published>2020-01-24T18:30:00.000Z</published>
+    <updated>2020-07-21T06:18:50.796Z</updated>
+    
+    <content type="html"><![CDATA[<p>everyone starts somewhere.</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;everyone starts somewhere.&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+    
+    
+      <category term="personal" scheme="http://yudistrange.github.io/tags/personal/"/>
+    
+  </entry>
+  
+</feed>
