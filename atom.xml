@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yudistrange.github.io/"/>
-  <updated>2020-07-21T07:28:14.572Z</updated>
+  <updated>2021-03-03T06:11:34.562Z</updated>
   <id>http://yudistrange.github.io/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="http://yudistrange.github.io/2020/07/21/reading-list/"/>
     <id>http://yudistrange.github.io/2020/07/21/reading-list/</id>
     <published>2020-07-20T18:30:00.000Z</published>
-    <updated>2020-07-21T07:28:14.572Z</updated>
+    <updated>2021-03-03T06:11:34.562Z</updated>
     
-    <content type="html"><![CDATA[<p>I have been sitting on a pile of technical books that I would like to read. But I haven’t been able to do it with conviction. I keep getting distracted by something or the other.</p><p>So I thought maybe I will put the list in the public domain, just to put some pressure on myself. The goal is to finish these cover to cover before the year ends. Here goes it:</p><ul><li>Practical Object Oriented design in Ruby</li><li>TDD by example</li><li>User stories applied</li><li>Software Architecture</li><li>Designing for Scalability with Erlang</li><li>Reactive Design Patterns</li><li>Database Internals</li><li>Designing Data-Intensive Applications</li></ul>]]></content>
+    <content type="html"><![CDATA[<p>I have been sitting on a pile of technical books that I would like to read. But I haven’t been able to do it with conviction. I keep getting distracted by something or the other.</p><p>So I thought maybe I will put the list in the public domain, just to put some pressure on myself. The goal is to finish these cover to cover before the year ends. Here goes it:</p><ul><li><input checked="" disabled="" type="checkbox"> Practical Object Oriented design in Ruby</li><li><input disabled="" type="checkbox"> TDD by example</li><li><input disabled="" type="checkbox"> User stories applied</li><li><input disabled="" type="checkbox"> Software Architecture</li><li><input disabled="" type="checkbox"> Designing for Scalability with Erlang</li><li><input disabled="" type="checkbox"> Reactive Design Patterns</li><li><input disabled="" type="checkbox"> Database Internals</li><li><input disabled="" type="checkbox"> Designing Data-Intensive Applications</li></ul><h4 id="Update-2020-03-03"><a href="#Update-2020-03-03" class="headerlink" title="Update 2020-03-03"></a>Update 2020-03-03</h4><p>Failed miserably with this. Started a lot of these, but only finished POODR completely. Need to get better at this.</p>]]></content>
     
     <summary type="html">
     
