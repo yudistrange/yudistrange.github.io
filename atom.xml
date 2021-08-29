@@ -3,7 +3,7 @@
   <title>notes</title>
   
   
-  <link href="/atom.xml" rel="self"/>
+  <link href="http://yudistrange.github.io/atom.xml" rel="self"/>
   
   <link href="http://yudistrange.github.io/"/>
   <updated>2021-03-03T06:11:34.562Z</updated>
@@ -25,22 +25,20 @@
     
     <content type="html"><![CDATA[<p>I have been sitting on a pile of technical books that I would like to read. But I haven’t been able to do it with conviction. I keep getting distracted by something or the other.</p><p>So I thought maybe I will put the list in the public domain, just to put some pressure on myself. The goal is to finish these cover to cover before the year ends. Here goes it:</p><ul><li><input checked="" disabled="" type="checkbox"> Practical Object Oriented design in Ruby</li><li><input disabled="" type="checkbox"> TDD by example</li><li><input disabled="" type="checkbox"> User stories applied</li><li><input disabled="" type="checkbox"> Software Architecture</li><li><input disabled="" type="checkbox"> Designing for Scalability with Erlang</li><li><input disabled="" type="checkbox"> Reactive Design Patterns</li><li><input disabled="" type="checkbox"> Database Internals</li><li><input disabled="" type="checkbox"> Designing Data-Intensive Applications</li></ul><h4 id="Update-2020-03-03"><a href="#Update-2020-03-03" class="headerlink" title="Update 2020-03-03"></a>Update 2020-03-03</h4><p>Failed miserably with this. Started a lot of these, but only finished POODR completely. Need to get better at this.</p>]]></content>
     
-    <summary type="html">
     
       
       
-        &lt;p&gt;I have been sitting on a pile of technical books that I would like to read. But I haven’t been able to do it with conviction. I keep gett
+    <summary type="html">&lt;p&gt;I have been sitting on a pile of technical books that I would like to read. But I haven’t been able to do it with conviction. I keep gett</summary>
       
     
-    </summary>
     
     
     
-      <category term="personal" scheme="http://yudistrange.github.io/tags/personal/"/>
+    <category term="personal" scheme="http://yudistrange.github.io/tags/personal/"/>
     
-      <category term="tech" scheme="http://yudistrange.github.io/tags/tech/"/>
+    <category term="tech" scheme="http://yudistrange.github.io/tags/tech/"/>
     
-      <category term="books" scheme="http://yudistrange.github.io/tags/books/"/>
+    <category term="books" scheme="http://yudistrange.github.io/tags/books/"/>
     
   </entry>
   
@@ -53,19 +51,17 @@
     
     <content type="html"><![CDATA[<p>everyone starts somewhere.</p>]]></content>
     
-    <summary type="html">
     
       
       
-        &lt;p&gt;everyone starts somewhere.&lt;/p&gt;
-
+    <summary type="html">&lt;p&gt;everyone starts somewhere.&lt;/p&gt;
+</summary>
       
     
-    </summary>
     
     
     
-      <category term="personal" scheme="http://yudistrange.github.io/tags/personal/"/>
+    <category term="personal" scheme="http://yudistrange.github.io/tags/personal/"/>
     
   </entry>
   
