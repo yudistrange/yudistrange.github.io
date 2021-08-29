@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+<meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,minimum-scale=1,maximum-scale=1">
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+  <meta name="description" content="python setup with asdf"/>
+
+
+
+
+  <meta name="keywords" content="tech,python," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="notes">
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=1.1" />
+
+
+
+<link rel="canonical" href="http://yudistrange.github.io/2021/08/27/python-with-asdf/"/>
+
+
+<meta name="description" content="on asdfI first discovered the asdf tool when I was trying to manage different version of Elixir language on my machine. Later I discovered that I can use the same tool for managing versions of other l">
+<meta property="og:type" content="article">
+<meta property="og:title" content="python setup with asdf">
+<meta property="og:url" content="http://yudistrange.github.io/2021/08/27/python-with-asdf/index.html">
+<meta property="og:site_name" content="notes">
+<meta property="og:description" content="on asdfI first discovered the asdf tool when I was trying to manage different version of Elixir language on my machine. Later I discovered that I can use the same tool for managing versions of other l">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2021-08-27T11:56:47.000Z">
+<meta property="article:modified_time" content="2021-08-29T12:31:45.751Z">
+<meta property="article:author" content="udit">
+<meta property="article:tag" content="tech">
+<meta property="article:tag" content="python">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="stylesheet" type="text/css" href="/css/style.css?v=1.1" />
+<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'>
+
+
+
+
+
+<script type="text/javascript">
+  var themeConfig = {
+    fancybox: {
+      enable: false
+    },
+  };
+</script>
+
+
+
+
+  
+
+
+
+    <title> python setup with asdf - notes </title>
+  <meta name="generator" content="Hexo 4.2.1"><link rel="alternate" href="/atom.xml" title="notes" type="application/atom+xml">
+</head>
+
+  <body>
+    <div id="page">
+      <header id="masthead"><div class="site-header-inner">
+    <h1 class="site-title">
+        <a href="/." class="logo">notes</a>
+    </h1>
+
+    <nav id="nav-top">
+        
+            <ul id="menu-top" class="nav-top-items">
+                
+                    <li class="menu-item">
+                        <a href="/archives">
+                            
+                            
+                                archives
+                            
+                        </a>
+                    </li>
+                
+                    <li class="menu-item">
+                        <a href="/about">
+                            
+                            
+                                about
+                            
+                        </a>
+                    </li>
+                
+            </ul>
+        
+  </nav>
+</div>
+
+      </header>
+      <div id="content">
+        
+    <div id="primary">
+        
+  <article class="post">
+    <header class="post-header">
+      <h1 class="post-title">
+        
+          python setup with asdf
+        
+      </h1>
+
+      <time class="post-time">
+          Aug 27 2021
+      </time>
+    </header>
+
+
+
+    
+            <div class="post-content">
+            <h3 id="on-asdf"><a href="#on-asdf" class="headerlink" title="on asdf"></a>on asdf</h3><p>I first discovered the <a href="https://asdf-vm.com/" target="_blank" rel="noopener">asdf</a> tool when I was trying to manage different version of Elixir language on my machine. Later I discovered that I can use the same tool for managing versions of other languages (and tools!) using asdf plugins.</p>
+<h3 id="on-python-setup"><a href="#on-python-setup" class="headerlink" title="on python setup"></a>on python setup</h3><p>Setting up python locally is easy.</p>
+<p>Setting up python multiple projects, each using a different version of python, along with their possibly conflicting dependencies is complicated. There are various tools like <a href="https://docs.conda.io/en/latest/" target="_blank" rel="noopener">conda</a>, <a href="https://github.com/pyenv/pyenv" target="_blank" rel="noopener">pyenv</a>, <a href="https://virtualenv.pypa.io/en/latest/" target="_blank" rel="noopener">virtualenv</a> which tackle different (or overlapping) sub-sets of this problem.</p>
+<p>I found the combination of pyenv (to manage different versions of python) + virtualenv (to separate out the dependencies of projects) the most tenable. Then I discovered that asdf can be a drop in replacement for pyenv. I also use <a href="https://virtualfish.readthedocs.io/en/latest/" target="_blank" rel="noopener">virtualfish</a>, the fish shell wrapper over virtualenv</p>
+<p>Please install asdf’s <a href="https://github.com/danhper/asdf-python.git" target="_blank" rel="noopener">python-plugin</a></p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> Install python version</span></span><br><span class="line">asdf install python &lt;version&gt;</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> Set python version to be used globally</span></span><br><span class="line">asdf global python 3.9.5</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> Set python version to be used <span class="keyword">in</span> the current folder</span></span><br><span class="line">asdf local python 3.7.11</span><br></pre></td></tr></table></figure>
+
+<p>Once the requisite python version installed, a virtual environment can be created as follows</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vf new -p python3.7.11 my-virtual-env</span><br></pre></td></tr></table></figure>
+<p><em>Please note</em>: If the python version is not specified virtualfish always takes up the global version irrespective of the currently set local python version. This maybe a bug in my configuration.</p>
+<h3 id="on-setting-python-for-homebrew"><a href="#on-setting-python-for-homebrew" class="headerlink" title="on setting python for homebrew"></a>on setting python for homebrew</h3><p><a href="https://brew.sh/" target="_blank" rel="noopener">Homebrew</a> likes to install and manage its own version of python. It will often get installed as a transitive dependency of some tool (pgcli in my case). It bugged me that I had 2 very similar versions of python (3.9.5 vs 3.9.6 iirc) installed on the system, one maintained by brew the other by asdf. Luckily I found a <a href="https://towardsdatascience.com/homebrew-and-pyenv-python-playing-pleasantly-in-partnership-3a342d86319b" target="_blank" rel="noopener">post</a> that lists how to use a pyenv installed python version with homebrew. I did the same, et voila homebrew now uses the python version maintained by asdf.</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ln -s ~/.asdf/installs/python/3.9.6 $(brew --cellar python)/3.9.6</span><br></pre></td></tr></table></figure>
+<p><em>Please note</em>: If there’s no python version managed by brew, then we may need to create the directory</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mkdir $(brew --cellar python)</span><br></pre></td></tr></table></figure>
+
+            </div>
+          
+
+    
+      <footer class="post-footer">
+		
+		<div class="post-tags">
+		  
+			<a href="/tags/tech/">tech</a>
+		  
+			<a href="/tags/python/">python</a>
+		  
+		</div>
+		
+
+        
+        
+  <nav class="post-nav">
+    
+    
+      <a class="next" href="/2020/07/21/reading-list/">
+        <span class="next-text nav-default">reading list</span>
+        <span class="prev-text nav-mobile">Next</span>
+        <i class="iconfont icon-right"></i>
+      </a>
+    
+  </nav>
+
+        
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+      </footer>
+    
+  </article>
+
+    </div>
+
+      </div>
+
+      <footer id="colophon"><span class="copyright-year">
+    
+        &copy;
+    
+        2020 -
+    
+    2021
+    <span class="footer-author">udit.</span>
+    <span class="power-by">
+        Powered by <a class="hexo-link" href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> and <a class="theme-link" href="https://github.com/frostfan/hexo-theme-polarbear" target="_blank" rel="noopener">Polar Bear</a>
+    </span>
+</span>
+
+      </footer>
+
+      <div class="back-to-top" id="back-to-top">
+        <i class="iconfont icon-up"></i>
+      </div>
+    </div>
+    
+
+
+    
+
+
+
+
+  
+    <script type="text/javascript" src="/lib/jquery/jquery-3.1.1.min.js"></script>
+  
+
+  
+
+    <script type="text/javascript" src="/js/src/theme.js?v=1.1"></script>
+<script type="text/javascript" src="/js/src/bootstrap.js?v=1.1"></script>
+
+  </body>
+</html>
